@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+}
+
+.header__container {
+    height: 350px;
+    overflow: hidden;
+}
+
+.header__title {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+}
+
+.main {
+    position: relative;
+}
+
+.tv {
+    position: absolute;
+    top: -221px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 400px;
+    height: 290px;
+    background: #4C5454;
+    border-radius: 50% / 10%;
+    color: white;
+    text-align: center;
+    text-indent: .1em;
+}
+
+.tv:before {
+    content: '';
+    position: absolute;
+    top: 10%;
+    bottom: 10%;
+    right: -5%;
+    left: -5%;
+    background: inherit;
+    border-radius: 5% / 50%;
+}
+
+#form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#form:before {
+    content: '';
+    position: absolute;
+    top: -85px;
+    left: 47%;
+    border-top: 3px solid #4C5454;
+    width: 104px;
+    transform: rotate(-45deg);
+}
+
+#form:after {
+    content: '';
+    position: absolute;
+    top: -85px;
+    left: 28%;
+    border-top: 3px solid #4C5454;
+    width: 104px;
+    transform: rotate(45deg);
+}
+
+.form__title {
+    font-size: 2rem;
+    position: relative;
+    top: -28px;
+}
+
+.form__input {
+    height: 43px;
+    width: 92%;
+    position: relative;
+    padding: .5rem;
+    top: 25px;
+    font-size: 1.3rem;
+    margin: 0 auto;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    text-align: center;
+}
+
+.form__btn {
+    position: relative;
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    bottom: -88px;
+    outline: none;
+    cursor: pointer;
+    border: 2px solid #000;
+    background-color: rgb(198, 219, 240);
+    font-weight: bold;
+    font-size: 1.1rem;
+    
+}
+
+.form__error {
+    position: relative;
+    color: #FF4242;
+    top: -36px;
+    font-size: 1rem;
+}
+
+.instructions__container {
+    justify-content: center;
+    margin: 0 auto;
+    position: relative;
+    top: 105px;
+}
+
+#instructions {
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.instruction {
+    width: 6rem;
+    height: 6rem;
+    justify-content: center;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+}
+
+.more {
+    background-color: #E9D758;
+}
+
+.less {
+    background-color: #F78E69;
+}
+.win {
+    background-color: #00F0B5;
+}

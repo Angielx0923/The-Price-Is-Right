@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>The Price Is Right</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__container"><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-7.05,94.23 C163.37,188.97 350.17,40.95 507.05,138.64 L500.00,0.00 L0.00,0.00 Z" style="stroke: none; fill: rgb(198, 219, 240);"></path></svg>
+
+            <h1 class="header__title">The Price Is Right</h1>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="tv">
+            <form id="form">
+                <div class="form__container">
+                    <label class="form__title">Play the game!</label>
+                    <input class="form__input" id="price" placeholder="Guess the price! (from 0 to 1000)">
+                    <button class="form__btn" type="submit">GO!</button>
+                </div>
+                <small class="form__error">Please, enter a number.</small>
+            </form>
+        </div>
+        <div class="instructions__container">
+            <div id="instructions"></div>
+        </div>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
