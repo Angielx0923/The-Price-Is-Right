@@ -9,10 +9,10 @@
 
 .header__title {
     position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
+    top: 20px;
+    left: 23px;
     color: #fff;
+    font-family: 'Ranchers', cursive;
 }
 
 .main {
@@ -73,9 +73,10 @@
 }
 
 .form__title {
-    font-size: 2rem;
+    font-size: 1.3rem;
     position: relative;
     top: -28px;
+    font-family: 'Press Start 2P', cursive;
 }
 
 .form__input {
@@ -90,6 +91,7 @@
     border: none;
     outline: none;
     text-align: center;
+    font-family: 'Russo One', sans-serif;
 }
 
 .form__btn {
@@ -104,6 +106,7 @@
     background-color: rgb(198, 219, 240);
     font-weight: bold;
     font-size: 1.1rem;
+    font-family: 'Ranchers', cursive;
     
 }
 
@@ -122,19 +125,42 @@
 }
 
 #instructions {
-    font-size: 1.3rem;
-    font-weight: bold;
+    font-size: 5rem;
     text-transform: uppercase;
     text-align: center;
 }
 
 .instruction {
     width: 6rem;
-    height: 6rem;
+    width: 6rem;
     justify-content: center;
     border-radius: 50%;
     margin: 0 auto;
-    margin-bottom: 1rem;
+    margin-bottom: -2rem;
+}
+
+.instructionBox {
+    justify-content: center;
+    padding: .5rem 2rem;
+    display: inline-block;
+    background-color: #fff;
+    border-radius: 30px;
+    position: relative;
+    font-size: 1.5rem;
+    top: -16px;
+    font-family: 'Ranchers', cursive;
+}
+
+.boxMore {
+    border: 2px solid #E9D758;
+}
+
+.boxLess {
+    border: 2px solid #F78E69;
+}
+
+.boxWin {
+    border: 2px solid #00F0B5;
 }
 
 .more {
@@ -146,4 +172,11 @@
 }
 .win {
     background-color: #00F0B5;
+    display: flex;
+    width: 9rem;
+    height: 9rem;
+    font-size: 3.5rem;
+    font-weight: bold;
+    align-items: center;
+    font-family: 'Ranchers', cursive;
 }

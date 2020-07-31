@@ -18,25 +18,35 @@ let chosenNumber;
 
 function check(number) {
   let instruction = document.createElement('div');
+  let instructionBox = document.createElement('div');
   
   if(number < randomNumber) {
     // C'est plus
-    instruction.textContent = '#' + hit + '\n(' + number + ') ' + '\u21e7';
+    instructionBox.textContent = '#' + hit + ' (' + number + ') ';
+    instructionBox.className = 'instructionBox boxMore';
+    // Flèche du haut
+    instruction.textContent = '\u21e1';
     instruction.className = 'instruction more';
   }
   else if(number > randomNumber) {
     // C'est moins
-    instruction.textContent = '#' + hit + '\n(' + number + ') ' + '\u21e9';
+    instructionBox.textContent = '#' + hit + ' (' + number + ') ';
+    instructionBox.className = 'instructionBox boxLess';
+    // Flèche du bas
+    instruction.textContent = '\u21e3';
     instruction.className = 'instruction less';
   }
   else {
     // Félicitations
-    instruction.textContent = '#' + hit + '\n(' + number + ') ' + 'YAY!';
+    instructionBox.textContent = '#' + hit + ' (' + number + ') You win!';
+    instructionBox.className = 'instructionBox boxWin';
+    instruction.textContent = 'YAY!';
     instruction.className = 'instruction win';
     // On désactive le formulaire une fois que le jeu est gagné
     input.disabled = true;
   }
 
+  document.querySelector('#instructions').prepend(instructionBox);
   document.querySelector('#instructions').prepend(instruction);
 };
 
